@@ -51,8 +51,11 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
 **Future Improvements**
 
     Add additional data to enrich features, such as proximity to amenities, schools, or shopping areas, to better capture geographic factors.
+    
     Explore more advanced models like XGBoost or CatBoost, known for their robustness and performance with complex relationships.
+    
     Handle outliers better using techniques like quantile regression or adding indicator variables.
+    
     Optimize hyperparameters with techniques like RandomizedSearchCV to save time and perform in-depth analyses on cases where the model performed poorly.
 
 
