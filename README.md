@@ -1,6 +1,6 @@
 # California-House-Price-Prediction
 
-This project aims to predict housing prices in California using the California Housing Dataset "housing.csv". The analysis includes data preprocessing, feature engineering, model training, evaluation, and error analysis to build a robust predictive model. You can find more details and the program code in "California Housing Prices.ipynb".
+This project aims to predict housing prices in California using the California Housing Dataset "_housing.csv_". The analysis includes data preprocessing, feature engineering, model training, evaluation, and error analysis to build a robust predictive model. You can find more details and the program code in "_California Housing Prices.ipynb_".
 
 The dataset contains 20640 entries and 10 variables following.
 
@@ -56,8 +56,8 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
 | Model                  | Best Parameters                               | R² (Cross-Validated) | MSE on Test Data |
 |------------------------|-----------------------------------------------|----------------------|------------------|
 | **Linear Regression**  | None                                         | 0.484 ± 0.009       | ~0.306           |
-| **Decision Tree**      | {'max_depth': 10, 'min_samples_leaf': 5}     | 0.585 ± 0.012       | ~0.312           |
-| **Random Forest**      | {'n_estimators': 200, 'max_depth': None}     | 0.686 ± 0.013       | ~0.180           |
+| **Decision Tree**      |Tuned via Nested Cross-Validation       | 0.585 ± 0.012       | ~0.312           |
+| **Random Forest**      | Tuned via Nested Cross-Validation       | 0.686 ± 0.013       | ~0.180           |
 | **Gradient Boosting**  | Tuned via Nested Cross-Validation            | 0.700 ± 0.006       | ~0.180           |
 
 ---
