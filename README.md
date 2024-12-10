@@ -16,4 +16,4 @@ The dataset contains 20640 entries and 10 variables following.
     Median House Value
     Ocean Proximity
 
-To resolve the regression problem, the project is divided into four main parts : Data analysis, Data cleaning, Feature Engineering and Training of machine learning models. First part contains data analysis and cleaning as explained in EDA and data cleaning.ipynb. Second is training of machine learning models explained in Training Machine Learning Algorithms.ipynb.
+To resolve the regression problem, the project is divided into four main parts : Data analysis, Data cleaning, Feature Engineering and Machine learning model training. You can find more details and the program code in California Housing Prices.ipynb.
