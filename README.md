@@ -53,12 +53,12 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
 
 ## **Results**
 
-| Model                  | Best Parameters                               | R² (Cross-Validated) | MSE on Test Data |
-|------------------------|-----------------------------------------------|----------------------|------------------|
-| **Linear Regression**  | None                                         | 0.484 ± 0.009       | ~0.306           |
-| **Decision Tree**      |Tuned via Nested Cross-Validation       | 0.585 ± 0.012       | ~0.312           |
-| **Random Forest**      | Tuned via Nested Cross-Validation       | 0.686 ± 0.013       | ~0.180           |
-| **Gradient Boosting**  | Tuned via Nested Cross-Validation            | 0.700 ± 0.006       | ~0.180           |
+| Model                  | Best Parameters                               | R² (Cross-Validated) |
+|------------------------|-----------------------------------------------|----------------------|
+| **Linear Regression**  | None                                         | 0.484 ± 0.009       |
+| **Decision Tree**      |Tuned via Nested Cross-Validation       | 0.585 ± 0.012       |
+| **Random Forest**      | Tuned via Nested Cross-Validation       | 0.686 ± 0.013       |
+| **Gradient Boosting**  | Tuned via Nested Cross-Validation            | 0.700 ± 0.006       |
 
 ---
 
