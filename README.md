@@ -15,49 +15,59 @@ The dataset contains 20640 entries and 10 variables following.
     Median House Value
     Ocean Proximity
 
+---
 
-**Project Overview**
+##**Project Overview**
 
 Predicting housing prices is crucial for decision-making in real estate, city planning, and public policy. This project leverages machine learning models to predict median_house_value based on various features, including geographical data, socio-economic variables, and housing characteristics.
 
+---
 
-**Key Steps**
+##**Key Steps**
 
-    Exploratory Data Analysis (EDA):
-        Visualized feature distributions and correlations.
-        Identified key predictors like median_income and geographical variables (longitude, latitude).
+- **Exploratory Data Analysis (EDA)**:
+  - Visualized feature distributions and correlations.
+  - Identified key predictors like `median_income` and geographical variables (`longitude`, `latitude`).
 
-    Data Preprocessing:
-        Handled missing data (total_bedrooms) via imputation.
-        Performed feature transformations, including logarithmic transformations to reduce skewness.
-        Encoded categorical features like ocean_proximity.
-        Standardization to put numerical variables on the same scale     
+- **Data Preprocessing**:
+  - Handled missing data (`total_bedrooms`) via imputation.
+  - Performed feature transformations, including logarithmic transformations to reduce skewness.
+  - Encoded categorical features like `ocean_proximity`.
+  - Standardization to put numerical variables on the same scale     
 
-    Model Development:
-        Trained models:
-            Linear Regression
-            Decision Tree Regressor
-            Random Forest Regressor
-            Gradient Boosting Regressor (GBR)
-        Tuned hyperparameters using GridSearchCV and validated models with nested cross-validation.
+- **Model Development**:
+  - Trained models:
+    - Linear Regression
+    - Decision Tree Regressor
+    - Random Forest Regressor
+    - Gradient Boosting Regressor (GBR)
+  - Tuned hyperparameters using `GridSearchCV` and validated models with nested cross-validation.
 
-    Evaluation:    
-        Assessed model performance using metrics such as:
-            R² (Coefficient of Determination)
-            Mean Squared Error (MSE)
-        Conducted error analysis to identify areas for improvement.
+- **Evaluation**:
+  - Assessed model performance using metrics such as:
+    - **R²** (Coefficient of Determination)
+    - **Mean Squared Error (MSE)**
+  - Conducted error analysis to identify areas for improvement.
 
+---
 
-**Future Improvements**
+## **Results**
 
-    Add additional data to enrich features, such as proximity to amenities, schools, or shopping areas, to better capture geographic factors.
+| Model                  | Best Parameters                               | R² (Cross-Validated) | MSE on Test Data |
+|------------------------|-----------------------------------------------|----------------------|------------------|
+| **Linear Regression**  | None                                         | 0.484 ± 0.009       | ~0.306           |
+| **Decision Tree**      | {'max_depth': 10, 'min_samples_leaf': 5}     | 0.585 ± 0.012       | ~0.312           |
+| **Random Forest**      | {'n_estimators': 200, 'max_depth': None}     | 0.686 ± 0.013       | ~0.180           |
+| **Gradient Boosting**  | Tuned via Nested Cross-Validation            | 0.700 ± 0.006       | ~0.180           |
+
+---
+
+##**Future Improvements**
+
+1. Add additional data to enrich features, such as proximity to amenities, schools, or shopping areas, to better capture geographic factors.
     
-    Explore more advanced models like XGBoost or CatBoost, known for their robustness and performance with complex relationships.
+2. Explore more advanced models like XGBoost or CatBoost, known for their robustness and performance with complex relationships.
     
-    Handle outliers better using techniques like quantile regression or adding indicator variables.
+3. Handle outliers better using techniques like quantile regression or adding indicator variables.
     
-    Optimize hyperparameters with techniques like RandomizedSearchCV to save time and perform in-depth analyses on cases where the model performed poorly.
-
-
-
-
+4. Optimize hyperparameters with techniques like RandomizedSearchCV to save time and perform in-depth analyses on cases where the model performed poorly.
