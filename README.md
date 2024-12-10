@@ -17,13 +17,13 @@ The dataset contains 20640 entries and 10 variables following.
 
 ---
 
-##**Project Overview**
+## **Project Overview**
 
 Predicting housing prices is crucial for decision-making in real estate, city planning, and public policy. This project leverages machine learning models to predict median_house_value based on various features, including geographical data, socio-economic variables, and housing characteristics.
 
 ---
 
-##**Key Steps**
+## **Key Steps**
 
 - **Exploratory Data Analysis (EDA)**:
   - Visualized feature distributions and correlations.
@@ -62,7 +62,7 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
 
 ---
 
-##**Future Improvements**
+## **Future Improvements**
 
 1. Add additional data to enrich features, such as proximity to amenities, schools, or shopping areas, to better capture geographic factors.
     
