@@ -33,7 +33,7 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
   - Handled missing data (`total_bedrooms`) via imputation.
   - Performed feature transformations, including logarithmic transformations to reduce skewness.
   - Encoded categorical features like `ocean_proximity`.
-  - Standardization to put numerical variables on the same scale     
+  - Standardization to put numerical feartures on the same scale     
 
 - **Model Development**:
   - Trained models:
@@ -46,16 +46,17 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
 - **Evaluation**:
   - Assessed model performance using metrics such as:
     - **R²** (Coefficient of Determination)
-    - **Mean Squared Error (MSE)**
+    - **Mean absolute percentage error (MAPE)**
+    - **Median absolute error (MAE)**
   - Conducted error analysis to identify areas for improvement.
 
 ---
 
 ## **Results**
 
-| Model                  | Best Parameters                               | R² (Cross-Validated) |
-|------------------------|-----------------------------------------------|----------------------|
-| **Linear Regression**  | None                                         | 0.484 ± 0.009       |
+| Model                  | Best Parameters                               | R²  |Mean absolute percentage error|Mean absolute percentage error|
+|------------------------|-----------------------------------------------|----------------------|----------------------|
+| **Linear Regression**  | None                                         | 0.484 ± 0.011  |30.955 % ± 0.315 %|39.026k$ ± 0.241k$ |
 | **Decision Tree**      |Tuned via Nested Cross-Validation       | 0.585 ± 0.012       |
 | **Random Forest**      | Tuned via Nested Cross-Validation       | 0.686 ± 0.013       |
 | **Gradient Boosting**  | Tuned via Nested Cross-Validation            | 0.700 ± 0.006       |
