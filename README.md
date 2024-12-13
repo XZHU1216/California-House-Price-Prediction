@@ -47,13 +47,13 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
   - Assessed model performance using metrics such as:
     - **R²** (Coefficient of Determination)
     - **Mean absolute percentage error (MAPE)**
-    - **Median absolute error (MAE)**
+    - **Median absolute error (MedAE)**
   - Conducted error analysis to identify areas for improvement.
 
 ---
 
 ## **Results**
-| Model              | Best Parameters                                                                 | R² Score (Nested CV) | MAPE (Nested CV)      | MAE (Nested CV)        |
+| Model              | Best Parameters                                                                 | R² Score (Nested CV) | MAPE (Nested CV)      | MedAE (Nested CV)        |
 |--------------------|---------------------------------------------------------------------------------|-----------------------|-----------------------|--------------------------|
 | Linear Regression  | {}                                                                              | 0.484 ± 0.011        | 30.955% ± 0.315%      | 39.026k$ ± 0.241k$       |
 | Decision Tree      | {'max_depth': 10, 'min_samples_leaf': 5, 'min_samples_split': 2}                | 0.585 ± 0.011        | 22.832% ± 0.225%      | 25.831k$ ± 0.334k$       |
