@@ -53,12 +53,12 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
 ---
 
 ## **Results**
-| Model              |   R² Score | Mean Absolute Percentage Error (MAPE)   | Median Absolute Error (MedAE)   |
-|--------------------|------------|------------------------------------------|----------------------------------|
-| Linear Regression  |      0.476 | 31.120%                                  | 39.200 k$                       |
-| Decision Tree      |      0.585 | 22.548%                                  | 25.292 k$                       |
-| Random Forest      |      0.693 | 19.162%                                  | 20.226 k$                       |
-| Gradient Boosting  |      0.691 | 19.473%                                  | 21.059 k$                       |
+| Model              | Best Parameters                                                                 | R² Score (Nested CV) | MAPE (Nested CV)      | MAE (Nested CV)        |
+|--------------------|---------------------------------------------------------------------------------|-----------------------|-----------------------|--------------------------|
+| Linear Regression  | {}                                                                              | 0.484 ± 0.011        | 30.955% ± 0.315%      | 39.026k$ ± 0.241k$       |
+| Decision Tree      | {'max_depth': 10, 'min_samples_leaf': 5, 'min_samples_split': 2}                | 0.585 ± 0.011        | 22.832% ± 0.225%      | 25.831k$ ± 0.334k$       |
+| Random Forest      | {'max_depth': None, 'min_samples_leaf': 2, 'min_samples_split': 2, 'n_estimators': 200} | 0.686 ± 0.011        | 19.357% ± 0.223%      | 20.921k$ ± 0.436k$       |
+| Gradient Boosting  | {'learning_rate': 0.1, 'max_depth': 7, 'n_estimators': 200}                     | 0.688 ± 0.011        | 19.348% ± 0.256%      | 21.284k$ ± 0.118k$       |
 
 ---
 
