@@ -30,7 +30,7 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
   - Identified key predictors like `median_income` and geographical variables (`longitude`, `latitude`).
 
 - **Data Preprocessing**:
-  - Handled missing data (`total_bedrooms`) via imputation.
+  - Handled exteme values via imputation and delete missing data (`total_bedrooms`).
   - Performed feature transformations, including logarithmic transformations to reduce skewness.
   - Encoded categorical features like `ocean_proximity`.
   - Standardization to put numerical feartures on the same scale     
@@ -53,13 +53,12 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
 ---
 
 ## **Results**
-
-| Model                  | Best Parameters                               | R²  |Mean absolute percentage error|Mean absolute percentage error|
-|------------------------|-----------------------------------------------|----------------------|----------------------|
-| **Linear Regression**  | None                                         | 0.484 ± 0.011  |30.955 % ± 0.315 %|39.026k$ ± 0.241k$ |
-| **Decision Tree**      |Tuned via Nested Cross-Validation       | 0.585 ± 0.012       |
-| **Random Forest**      | Tuned via Nested Cross-Validation       | 0.686 ± 0.013       |
-| **Gradient Boosting**  | Tuned via Nested Cross-Validation            | 0.700 ± 0.006       |
+| Model              |   R² Score | Mean Absolute Percentage Error (MAPE)   | Median Absolute Error (MedAE)   |
+|--------------------|------------|------------------------------------------|----------------------------------|
+| Linear Regression  |      0.476 | 31.120%                                  | 39.200 k$                       |
+| Decision Tree      |      0.585 | 22.548%                                  | 25.292 k$                       |
+| Random Forest      |      0.693 | 19.162%                                  | 20.226 k$                       |
+| Gradient Boosting  |      0.691 | 19.473%                                  | 21.059 k$                       |
 
 ---
 
