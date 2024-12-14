@@ -46,8 +46,8 @@ Predicting housing prices is crucial for decision-making in real estate, city pl
 - **Evaluation**:
   - Assessed model performance using metrics such as:
     - **R²** (Coefficient of Determination)
-    - **Mean absolute percentage error (MAPE)**
-    - **Median absolute error (MedAE)**
+    - **Mean absolute percentage error** (MAPE)
+    - **Median absolute error** (MedAE)
   - Conducted error analysis to identify areas for improvement.
 
 ---
